@@ -1,0 +1,98 @@
+:root{
+    --color-title: #212121;
+    --color-logotype: #000;
+    --color-text-paragraph: #757575;
+    --color-text: #FFFFFF;
+    --color-button-nav: #2196F3;
+}
+
+
+body{
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+}
+header{
+    background-color:  #FFFFFF;
+}
+.logotype{
+    color: var(--color-logotype);
+    font-family: 'Raleway';
+    text-decoration: none;
+} 
+.logotype-web{
+    color: var(--color-button-nav);
+    font-family: 'Oleo Script';
+    text-decoration: none;
+}
+.nav{
+    color: var(--color-title);
+    text-decoration: none;
+}
+.nav:focus {
+    cursor: pointer;
+    color: var(--color-button-nav);
+}
+.heder-text{
+    color: var(--color-text-paragraph);
+    text-decoration: none;
+}
+.heder-text:focus{
+    cursor: pointer;
+    color: var(--color-button-nav);
+}
+
+
+
+main{
+    background-color: #F5F5F5;
+}
+.hero-title{
+    color:var(--color-text);
+    background-color: var(--color-logotype);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+.button{
+    background-color:var(--color-button-nav);
+    color: var(--color-wite);
+    cursor: pointer;
+}
+
+.heading-title{
+    color: var(--color-title);
+}
+.heading-subtitle{
+    color: var(--color-text-paragraph);
+}
+
+
+
+.button-portfolio{
+    background-color: #F5F4FA;
+    color: var(--color-title);
+    cursor: pointer;
+}
+.button-portfolio:focus{
+    background-color: var(--color-button-nav);
+    color:var(--color-text);
+}
+
+
+
+
+footer{
+    background-color:#2F303A;
+}
+.footer-logotype{
+    color:var(--color-text);
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+.address{
+    color:var(--color-text);
+    text-decoration: none;
+}
