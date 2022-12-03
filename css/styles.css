@@ -7,8 +7,39 @@
     --color-backround:  #F5F4FA;
     --color-footer: #2F303A;
 }
-
-
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.section{
+    padding: 94px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
+.list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.wrapper{
+    display: flex;
+}
 body{
     background-color:var(--color-white);
     font-family: 'Roboto' sans-serif;
@@ -19,11 +50,11 @@ body{
 .logotype{
     color: var(--color-logotype);
     font-family: 'Raleway';
-    text-decoration: none;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    margin-bottom: 25px;
 }
 .logotype-web{
     color: var(--color-button-nav);
@@ -33,12 +64,12 @@ body{
 }
 .nav{
     color: var(--color-title);
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.06;
     letter-spacing: 0.02em;
     list-style: none;
+    margin-bottom: 32px;
 }
 .nav:hover,
 .nav:focus {
@@ -51,6 +82,7 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
 }
 .heder-text:hover,
 .heder-text:focus{
@@ -59,6 +91,7 @@ body{
 
 .hero-section{
     background-color: var(--color-logotype);
+    padding: 200px 452px;
 }
 
 .hero-title{
@@ -69,6 +102,8 @@ body{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    margin: 0 0 30px;
+    font-family: 'Roboto' sans-serif;
 }
 .button{
     background-color:var(--color-button-nav);
@@ -81,11 +116,16 @@ body{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    padding: 10px 24px;
 }
+
 .section-team{
     background-color:var(--color-backround);
 }
-
+.display-none{
+    display: none;
+    margin: 0;
+}
 .icon{
     background-color:var(--color-white);
     list-style: none;
@@ -97,12 +137,15 @@ body{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom:  10px;
 }
 .paragraph{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 0 ;
 }
+
 .section-title{
     color: var(--color-title);
     font-weight: 700;
@@ -110,6 +153,8 @@ body{
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
+   
 }
 .icon-title{
     color: var(--color-title);
@@ -118,14 +163,15 @@ body{
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 .icon-paragraph{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
-
 
 .button-portfolio{
     background-color:var(--color-backround);
@@ -137,6 +183,7 @@ body{
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 34px;
     
 }
 .button-portfolio:hover,
@@ -144,18 +191,22 @@ body{
     background-color: var(--color-button-nav);
     color:var(--color-white);
 }
-
+.portfolio-jpg{
+    margin-bottom: 20px; 
+}
 .portfolio-title{
     color: var(--color-title);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 .portfolio-paragraph{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
 }
 
 .footer{
@@ -164,7 +215,6 @@ body{
 .footer-logotype{
     color:var(--color-white);
     font-family: 'Raleway';
-    text-decoration: none;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -172,11 +222,12 @@ body{
 }
 .address{
     color:var(--color-white);
-    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    font-style: normal;
+    margin-bottom: 12px;
 }
 .address:hover,
 .address:focus{
