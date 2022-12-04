@@ -10,6 +10,7 @@
 .conteiner{
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .section{
     padding: 94px 0;
@@ -40,12 +41,18 @@ img {
 .wrapper{
     display: flex;
 }
+.display-none{
+    display: none;
+    margin: 0;
+}
 body{
     background-color:var(--color-white);
     font-family: 'Roboto' sans-serif;
     font-style: normal;
     color: var(--color-text-paragraph);
 }
+
+/*Хедер*/
 
 .logotype{
     color: var(--color-logotype);
@@ -54,7 +61,6 @@ body{
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    margin-bottom: 25px;
 }
 .logotype-web{
     color: var(--color-button-nav);
@@ -88,12 +94,37 @@ body{
 .heder-text:focus{
     color: var(--color-button-nav);
 }
-
-.hero-section{
-    background-color: var(--color-logotype);
-    padding: 200px 452px;
+.heder-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 354px;
+    padding: 24px 0 25px 0;
 }
 
+.heder-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+.heder-address{
+    display: flex;
+    gap: 40px;
+}
+.hedre-menu{
+    display: flex;
+    gap: 50px;
+
+}
+/*Секція герой*/
+.hero-section{
+    background-color: var(--color-logotype);
+}
+.hero-conteiner{
+    max-width: 696px;
+    
+}
 .hero-title{
     color:var(--color-white);
     text-align: center;
@@ -102,8 +133,8 @@ body{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    margin: 0 0 30px;
     font-family: 'Roboto' sans-serif;
+    margin-bottom: 30px;
 }
 .button{
     background-color:var(--color-button-nav);
@@ -122,14 +153,12 @@ body{
 .section-team{
     background-color:var(--color-backround);
 }
-.display-none{
-    display: none;
-    margin: 0;
+/*Наші переваги*/
+.advantages{
+    display: flex;
+    gap: 30px;
 }
-.icon{
-    background-color:var(--color-white);
-    list-style: none;
-}
+
 .heading-title{
     color: var(--color-title);
     font-weight: 700;
@@ -145,6 +174,7 @@ body{
     letter-spacing: 0.03em;
     margin-bottom: 0 ;
 }
+/*Чим ми займаэмось*/
 
 .section-title{
     color: var(--color-title);
@@ -154,7 +184,23 @@ body{
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
-   
+}
+.cards{
+    display: flex;
+    gap: 30px;
+}
+
+/*Наша команда*/
+.icon-photo{
+    display: flex;
+    gap: 30px;
+}
+.icon{
+    background-color:var(--color-white);
+    list-style: none; 
+}
+.photo{
+    margin-bottom: 30px;
 }
 .icon-title{
     color: var(--color-title);
