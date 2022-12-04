@@ -143,6 +143,7 @@ body{
     background-color:var(--color-button-nav);
     color: var(--color-white);
     cursor: pointer;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -239,6 +240,7 @@ body{
     color: var(--color-title);
     cursor: pointer;
     border: none;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
