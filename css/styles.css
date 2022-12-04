@@ -6,6 +6,7 @@
     --color-button-nav: #2196F3;
     --color-backround:  #F5F4FA;
     --color-footer: #2F303A;
+    --color-border: #EEEEEE;
 }
 .conteiner{
     width: 1200px;
@@ -15,6 +16,10 @@
 .section{
     padding: 94px 0;
 }
+.section:nth-child(3){
+    padding-top: 0;
+}
+
 h1,
 h2,
 h3,
@@ -38,16 +43,14 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-.wrapper{
-    display: flex;
-}
+
 .display-none{
     display: none;
     margin: 0;
 }
 body{
     background-color:var(--color-white);
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-style: normal;
     color: var(--color-text-paragraph);
 }
@@ -120,10 +123,11 @@ body{
 /*Секція герой*/
 .hero-section{
     background-color: var(--color-logotype);
+    padding: 200px 0;
 }
 .hero-conteiner{
     max-width: 696px;
-    
+    margin: auto;
 }
 .hero-title{
     color:var(--color-white);
@@ -133,7 +137,6 @@ body{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    font-family: 'Roboto' sans-serif;
     margin-bottom: 30px;
 }
 .button{
@@ -149,10 +152,11 @@ body{
     letter-spacing: 0.06em;
     padding: 10px 24px;
 }
-
-.section-team{
-    background-color:var(--color-backround);
+.hero-button{
+    display: flex;
+    justify-content: center;
 }
+
 /*Наші переваги*/
 .advantages{
     display: flex;
@@ -191,6 +195,9 @@ body{
 }
 
 /*Наша команда*/
+.section-team{
+   background-color: var(--color-backround);
+}
 .icon-photo{
     display: flex;
     gap: 30px;
@@ -199,10 +206,10 @@ body{
     background-color:var(--color-white);
     list-style: none; 
 }
-.photo{
-    margin-bottom: 30px;
-}
 .icon-title{
+    margin: 30px auto;
+}
+.name{
     color: var(--color-title);
     font-weight: 500;
     font-size: 16px;
@@ -216,7 +223,15 @@ body{
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+}
+/*Портфоліо*/
+
+.button-conteiner{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 34px;
 }
 
 .button-portfolio{
@@ -230,21 +245,33 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 34px;
-    
+    padding: 6px 22px;
 }
+
 .button-portfolio:hover,
 .button-portfolio:focus{
     background-color: var(--color-button-nav);
     color:var(--color-white);
 }
-.portfolio-jpg{
-    margin-bottom: 20px; 
+
+.portfolio{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box{
+    padding: 19px 23px;
+    border: 1px solid;
+    border-color: var(--color-border); 
+    flex-basis: calc((100%-60px)/3);
 }
 .portfolio-title{
     color: var(--color-title);
     font-weight: 700;
     font-size: 18px;
-    line-height: 2.2;
+    line-height: 2;
+    font-style: normal;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
 }
@@ -252,11 +279,16 @@ body{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
+/*Футер*/
 
 .footer{
     background-color:var(--color-footer);
+}
+.footer-section{
+    padding: 60px 0;
+   
 }
 .footer-logotype{
     color:var(--color-white);
@@ -265,6 +297,7 @@ body{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 28px;
 }
 .address{
     color:var(--color-white);
@@ -273,9 +306,15 @@ body{
     line-height: 24px;
     letter-spacing: 0.03em;
     font-style: normal;
-    margin-bottom: 12px;
 }
 .address:hover,
 .address:focus{
     color: var(--color-button-nav);
+}
+
+.footer-address{
+    margin-bottom: 12px;
+}
+.footer-address:last-child{
+    margin-bottom: 0;
 }
