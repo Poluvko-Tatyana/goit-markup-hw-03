@@ -8,6 +8,7 @@
     --color-backround:  #F5F4FA;
     --color-footer: #2F303A;
     --color-border: #EEEEEE;
+    --color-border-heder: #ECECEC;
 }
 .container{
     width: 1200px;
@@ -55,6 +56,11 @@ body{
 
 /*Хедер*/
 
+.border-container{
+    border-bottom: 1px solid;
+    border-bottom-color: var(--color-border-heder);
+}
+
 .logotype{
     color: var(--color-logotype);
     font-family: 'Raleway';
@@ -92,29 +98,31 @@ body{
 .heder-text:focus{
     color: var(--color-button-nav);
 }
+
 .heder-conteiner{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 354px;
     padding: 24px 0 25px 0;
 }
 
 .heder-nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
 }
+
 .heder-address{
     display: flex;
     gap: 40px;
+    margin-left: 354px;
 }
+
 .hedre-menu{
     display: flex;
     gap: 50px;
-
+    margin-left: 93px;
 }
+
 /*Секція герой*/
 .hero-section{
     background-color: var(--color-footer);
@@ -260,12 +268,16 @@ body{
     flex-wrap: wrap;
 }
 
+.portfolio-box{
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 .box{
     padding: 19px 23px;
     border: 1px solid;
     border-color: var(--color-border); 
-    flex-basis: calc((100% - 60px) / 3);
 }
+
 .portfolio-title{
     color: var(--color-title);
     font-weight: 700;
