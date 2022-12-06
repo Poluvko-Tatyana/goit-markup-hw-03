@@ -48,7 +48,7 @@ img {
     margin: 0;
 }
 body{
-    background-color:var(--color-basic);
+    background-color:var(--color-white);
     font-family: 'Roboto';
     font-style: normal;
     color: var(--color-text-paragraph);
@@ -59,6 +59,7 @@ body{
 .border-container{
     border-bottom: 1px solid;
     border-bottom-color: var(--color-border-heder);
+    background-color: var(--color-white);
 }
 
 .logotype{
@@ -276,6 +277,7 @@ body{
     padding: 19px 23px;
     border: 1px solid;
     border-color: var(--color-border); 
+    background-color: var(--color-white);
 }
 
 .portfolio-title{
