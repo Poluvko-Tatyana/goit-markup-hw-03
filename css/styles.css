@@ -1,5 +1,6 @@
 :root{
     --color-title: #212121;
+    --color-basic: #F5F5F5;
     --color-logotype: #000;
     --color-text-paragraph: #757575;
     --color-white: #FFFFFF;
@@ -8,16 +9,13 @@
     --color-footer: #2F303A;
     --color-border: #EEEEEE;
 }
-.conteiner{
+.container{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 .section{
     padding: 94px 0;
-}
-.section:nth-child(3){
-    padding-top: 0;
 }
 
 h1,
@@ -49,7 +47,7 @@ img {
     margin: 0;
 }
 body{
-    background-color:var(--color-white);
+    background-color:var(--color-basic);
     font-family: 'Roboto';
     font-style: normal;
     color: var(--color-text-paragraph);
@@ -67,9 +65,6 @@ body{
 }
 .logotype-web{
     color: var(--color-button-nav);
-}
-.li{
-    list-style: none;
 }
 .nav{
     color: var(--color-title);
@@ -122,13 +117,10 @@ body{
 }
 /*Секція герой*/
 .hero-section{
-    background-color: var(--color-logotype);
+    background-color: var(--color-footer);
     padding: 200px 0;
 }
-.hero-conteiner{
-    max-width: 696px;
-    margin: auto;
-}
+
 .hero-title{
     color:var(--color-white);
     text-align: center;
@@ -137,7 +129,8 @@ body{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    margin-bottom: 30px;
+    max-width: 696px;
+    margin: 0 auto 30px auto;
 }
 .button{
     background-color:var(--color-button-nav);
@@ -152,16 +145,18 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     padding: 10px 24px;
+    margin: 0 auto;
 }
-.hero-button{
-    display: flex;
-    justify-content: center;
-}
+
 
 /*Наші переваги*/
 .advantages{
     display: flex;
     gap: 30px;
+}
+
+.title-advantages{
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .heading-title{
@@ -181,6 +176,10 @@ body{
 }
 /*Чим ми займаэмось*/
 
+.cards-section{
+    padding-top: 0;
+}
+
 .section-title{
     color: var(--color-title);
     font-weight: 700;
@@ -199,16 +198,16 @@ body{
 .section-team{
    background-color: var(--color-backround);
 }
-.icon-photo{
+.team-photo{
     display: flex;
     gap: 30px;
 }
-.icon{
+.team{
     background-color:var(--color-white);
     list-style: none; 
 }
-.icon-title{
-    margin: 30px auto;
+.team-title{
+    padding: 30px 0;
 }
 .name{
     color: var(--color-title);
@@ -219,7 +218,7 @@ body{
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
-.icon-paragraph{
+.team-paragraph{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -232,7 +231,7 @@ body{
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 34px;
+    padding-bottom: 50px;
 }
 
 .button-portfolio{
@@ -246,7 +245,6 @@ body{
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 34px;
     padding: 6px 22px;
 }
 
@@ -266,7 +264,7 @@ body{
     padding: 19px 23px;
     border: 1px solid;
     border-color: var(--color-border); 
-    flex-basis: calc((100%-60px)/3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-title{
     color: var(--color-title);
@@ -287,11 +285,12 @@ body{
 
 .footer{
     background-color:var(--color-footer);
+    padding: 60px 0;
 }
 .footer-section{
-    padding: 60px 0;
-   
+     
 }
+
 .footer-logotype{
     color:var(--color-white);
     font-family: 'Raleway';
@@ -300,6 +299,7 @@ body{
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin-bottom: 28px;
+    display: flex;
 }
 .address{
     color:var(--color-white);
@@ -308,6 +308,10 @@ body{
     line-height: 24px;
     letter-spacing: 0.03em;
     font-style: normal;
+}
+
+.communication{
+    color: rgba(255, 255, 255, 0.6); 
 }
 .address:hover,
 .address:focus{
